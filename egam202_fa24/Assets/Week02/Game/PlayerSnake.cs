@@ -94,8 +94,8 @@ public class PlayerSnake : MonoBehaviour
     float GetSpeed()
     {
         // Determine the speed based on how many apples we've eaten
-        float countInterp = (size - moveCountMin) / (moveSpeedMax - moveSpeedMin);
-        float speed = Mathf.Lerp(moveSpeedMin, moveCountMax, countInterp);
+        float countInterp = (size - moveCountMin) / (moveCountMax - moveCountMin);
+        float speed = Mathf.Lerp(moveSpeedMin, moveSpeedMax, countInterp);
 
         // If we're dead, set the speed to zero (stop moving)
         if (!isAlive)

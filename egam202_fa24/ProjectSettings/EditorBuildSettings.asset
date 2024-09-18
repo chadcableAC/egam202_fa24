@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Week02/update_mover.unity
-    guid: aad1e46ba280d4be3b1aa034d7a4ed23
+    path: Assets/Week02/Game/week02_game.unity
+    guid: b1c9b00cb299c4bd98539be9eb781af7
   m_configObjects: {}
