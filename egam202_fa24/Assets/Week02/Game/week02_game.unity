@@ -758,7 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 591118112228909638, guid: 39548e596dd1d4efe984b079a4bcbeb0, type: 3}
   placementSize: {x: 15, y: 10}
-  placementRadius: 1
+  placementRadius: 1.15
   placementAmountMin: 0
   placementAmountMax: 10
   placementAmountSnakeMin: 5
@@ -1020,7 +1020,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 591118112228909638, guid: be6cef7e3c7a740579738dfb05c7a72a, type: 3}
   placementSize: {x: 15, y: 10}
-  placementRadius: 1
+  placementRadius: 1.15
   placementAmountMin: 1
   placementAmountMax: 5
   placementAmountSnakeMin: 1
