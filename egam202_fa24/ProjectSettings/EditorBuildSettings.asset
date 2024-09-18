@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Week02/update_mover.unity
+    guid: aad1e46ba280d4be3b1aa034d7a4ed23
   m_configObjects: {}
