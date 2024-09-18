@@ -760,9 +760,9 @@ MonoBehaviour:
   placementSize: {x: 15, y: 10}
   placementRadius: 1
   placementAmountMin: 0
-  placementAmountMax: 5
+  placementAmountMax: 10
   placementAmountSnakeMin: 5
-  placementAmountSnakeMax: 25
+  placementAmountSnakeMax: 50
 --- !u!1 &645750011
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,18 +2336,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1506604138}
     m_Modifications:
-    - target: {fileID: 166526932312233043, guid: ba8e071ed25914446ab85fb4d33a0e74, type: 3}
-      propertyPath: moveCountMax
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 166526932312233043, guid: ba8e071ed25914446ab85fb4d33a0e74, type: 3}
-      propertyPath: moveSpeedMax
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 166526932312233043, guid: ba8e071ed25914446ab85fb4d33a0e74, type: 3}
-      propertyPath: moveSpeedMin
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4817218377569820419, guid: ba8e071ed25914446ab85fb4d33a0e74, type: 3}
       propertyPath: m_Name
       value: PlayerSnake
@@ -2366,7 +2354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779280836540032360, guid: ba8e071ed25914446ab85fb4d33a0e74, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5779280836540032360, guid: ba8e071ed25914446ab85fb4d33a0e74, type: 3}
       propertyPath: m_LocalRotation.w

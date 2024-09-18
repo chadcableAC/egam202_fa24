@@ -8,6 +8,7 @@ public class PlayerSnake : MonoBehaviour
     public Rigidbody rb;
 
     Vector3 moveDirection = Vector3.forward;
+    public Vector3 startDirection = Vector3.forward;
 
     public float moveSpeedMin = 1f;
     public float moveSpeedMax = 10f;
@@ -32,7 +33,7 @@ public class PlayerSnake : MonoBehaviour
         snakeCam = FindObjectOfType<SnakeCamera>();
 
         // Set the initial direction
-        ChangeDirection(moveDirection);
+        ChangeDirection(startDirection);
     }
 
     public Vector3 GetDirection()
