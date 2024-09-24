@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class CameraRoomSwitcher : MonoBehaviour
 {
+    // Camera values
     public Camera myCamera;
 
     public float spherecastRadius = 1f;
 
     public RoomCameraSwitcher overheadRoom;
 
-
-    void LateUpdate()
+    void Update()
     {
+        // Run this logic on a left click
         if (Input.GetMouseButtonDown(0))
         {
+            // Turn the mouse position into a world position
             Vector2 mousePosition = Input.mousePosition;
             Ray worldRay = myCamera.ScreenPointToRay(mousePosition);
 
@@ -29,8 +31,10 @@ public class CameraRoomSwitcher : MonoBehaviour
                 }
             }
         }
+        // Run this logic on a right click
         else if (Input.GetMouseButtonDown(1))
         {
+            // Switch to the "overhead" room camera
             overheadRoom.MakePriority();
         }
     }
