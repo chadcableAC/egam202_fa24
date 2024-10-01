@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class TestNavAgent : MonoBehaviour
+public class NavMeshBridge : MonoBehaviour
 {
     // Object moving on the nav mesh
-    public NavMeshAgent navAgent;
+    public NavMeshAgent agent;
 
     void Update()
     {
@@ -20,7 +20,7 @@ public class TestNavAgent : MonoBehaviour
             // Move the agent to the point "hit" by the raycast
             if (Physics.Raycast(worldRay, out RaycastHit hitInfo))
             {
-                navAgent.SetDestination(hitInfo.point);
+                agent.SetDestination(hitInfo.point);
             }
         }
     }

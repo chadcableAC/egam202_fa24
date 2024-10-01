@@ -14,6 +14,8 @@ public class CameraClicker : MonoBehaviour
     public Transform clickHandleCenter;
     public Transform clickHandlePoint;
 
+    public LayerMask clickableLayerMask;
+
     // We do this in LateUpdate so that it happens after the cube's Update logic
     void LateUpdate()
     {
@@ -34,7 +36,7 @@ public class CameraClicker : MonoBehaviour
         //}
 
         // This function will return ALL objects hit
-        RaycastHit[] hits = Physics.SphereCastAll(worldRay, spherecastRadius);
+        RaycastHit[] hits = Physics.SphereCastAll(worldRay, spherecastRadius, 100, clickableLayerMask);
         foreach (RaycastHit hit in hits)
         {
             // See if the object has a ClickableObject.cs script attached
