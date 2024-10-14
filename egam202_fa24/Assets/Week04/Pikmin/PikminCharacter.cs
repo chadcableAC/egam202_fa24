@@ -7,10 +7,12 @@ public class PikminCharacter : MonoBehaviour
 {
     public enum PikminColors
     {
-        Red,
+        Red = 0,
         Blue,
         Yellow
     }
+
+    public List<Color> colors;
 
     public PikminColors currentColor;
     private PikminColors lastColor;
@@ -41,11 +43,13 @@ public class PikminCharacter : MonoBehaviour
     {
         lastColor = currentColor;
 
+        // Update color
+        Color color = colors[(int)currentColor];
+        myRenderer.material.color = color;
+
         switch (currentColor)
         {
             case PikminColors.Red:
-                // Update color
-                myRenderer.material.color = Color.red;
 
                 // Switch where the agent can navigate (Walkable OR fire)
                 navAgent.areaMask = 0;
@@ -54,8 +58,6 @@ public class PikminCharacter : MonoBehaviour
                 break;
 
             case PikminColors.Yellow:
-                // Update color
-                myRenderer.material.color = Color.yellow;
 
                 // Switch where the agent can navigate (Walkable OR fire)
                 navAgent.areaMask = 0;
@@ -64,8 +66,6 @@ public class PikminCharacter : MonoBehaviour
                 break;
 
             case PikminColors.Blue:
-                // Update color
-                myRenderer.material.color = Color.blue;
 
                 // Switch where the agent can navigate (Walkable OR fire)
                 navAgent.areaMask = 0;
