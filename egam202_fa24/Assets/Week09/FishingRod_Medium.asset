@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70b936759dfd48d09a9bcb1f636d3b9, type: 3}
+  m_Name: FishingRod_Medium
+  m_EditorClassIdentifier: 
+  lineColor: {r: 1, g: 0.9094449, b: 0, a: 1}
+  lineCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 5.94398
+      outSlope: 5.94398
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.03169308
+    - serializedVersion: 3
+      time: 0.47662354
+      value: 0.06279373
+      inSlope: 0.0069024814
+      outSlope: 0.0069024814
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.2107346
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -6.3787746
+      outSlope: -6.3787746
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.030025005
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  minCurveStrength: 1
+  maxCurveStrength: 0.5
+  minCurveDistance: 2
+  maxCurveDistance: 10
